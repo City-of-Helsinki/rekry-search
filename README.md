@@ -6,11 +6,37 @@ To make most of this app, make sure you have installed the drupal-helfi-rekry pr
 
 ## Getting started
 
+First, copy .env.example to .env and add missing variables
+```console
+foo@bar:~$ cp .env.example .env
+```
+Start up the project
 ```console
 foo@bar:~$ nvm use
 foo@bar:~$ npm i
 foo@bar:~$ npm start
 ```
+
+Navigate to `http://localhost:3000` to view the app.
+
+To run the tests:
+```console
+foo@bar:~$ npm t
+```
+
+## Developing
+
+### Folder structure
+
+As React has no standardized folder structure, and this app is pretty contained let's try to keep the folder structure simple. Group files to top-level folders by feature.
+
+### SCSS
+
+Use `module.scss` files. Since this app is an embedded one, we don't want to spill any styles out of the app and into the Drupal page.
+
+### Coding style
+
+We have a pre-commit hook that runs through prettier.
 
 ---
 
