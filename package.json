@@ -1,5 +1,5 @@
 {
-  "name": "paatokset-search",
+  "name": "rekry-search",
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
@@ -7,6 +7,7 @@
     "@appbaseio/reactivesearch": "^3.31.0",
     "@testing-library/react": "^13.2.0",
     "date-fns": "^2.16.1",
+    "eslint-config-react-app": "^7.0.1",
     "hds-design-tokens": "^1.6.0",
     "hds-react": "^1.6.0",
     "i18next": "^21.4.0",
@@ -18,16 +19,14 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "copy-files": "mkdir -p dist/react && cp build/static/js/main.*.chunk.js dist/react/paatokset-search-main.js && cp build/static/js/runtime-main.*.js dist/react/paatokset-search-runtime-main.js && cp build/static/js/[0-9]*.*.chunk.js dist/react/paatokset-search-vendors.js && cp build/static/js/*.map dist/react/ && cp build/static/css/main.*.css dist/react/paatokset-search-main.css && cp build/static/css/*.map dist/react",
+    "prepare": "husky install",
+    "copy-files": "mkdir -p dist/react && cp build/static/js/main.*.chunk.js dist/react/rekry-search-main.js && cp build/static/js/runtime-main.*.js dist/react/rekry-search-runtime-main.js && cp build/static/js/[0-9]*.*.chunk.js dist/react/rekry-search-vendors.js && cp build/static/js/*.map dist/react/ && cp build/static/css/main.*.css dist/react/rekry-search-main.css && cp build/static/css/*.map dist/react",
     "dist": "npm run build && rimraf dist && npm run copy-files",
-    "create-release": "npm run build && npm run dist && cd dist && zip -r paatokset_search.zip react"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "create-release": "npm run build && npm run dist && cd dist && zip -r rekry-search.zip react"
   },
   "browserslist": {
     "production": [
@@ -48,6 +47,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/react-router-dom": "^5.1.5",
+    "eslint": "^8.0.0",
     "husky": ">=4",
     "lint-staged": ">=10",
     "prettier": "^2.1.2",
