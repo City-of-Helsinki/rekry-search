@@ -1,5 +1,12 @@
 # rekry-search
 
+## MOVED!
+### Rekry search app has moved to a new location
+
+Rekry search app has moved to a Drupal module. Find it here: https://github.com/City-of-Helsinki/drupal-helfi-rekry/tree/dev/public/modules/custom/helfi_rekry_job_search
+
+---
+
 Rekry-search is a React app used as an UI for search functionalities in drupal-helfi-rekry.
 
 To make most of this app, make sure you have installed the drupal-helfi-rekry project and have set it up properly.
