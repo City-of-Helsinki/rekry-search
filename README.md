@@ -1,7 +1,5 @@
-# rekry-search
-
-## MOVED!
-### Rekry search app has moved to a new location
+# MOVED! rekry-search
+## Rekry search app has moved to a new location
 
 Rekry search app has moved to a Drupal module. Find it here: https://github.com/City-of-Helsinki/drupal-helfi-rekry/tree/dev/public/modules/custom/helfi_rekry_job_search
 
